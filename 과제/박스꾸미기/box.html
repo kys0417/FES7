@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>[해보기] 박스 꾸미기</title>
+  <style>
+    .box1,
+    .box2,
+    .box3 {
+      margin-top: 20px;
+      font-weight: bold;
+      width: 100px;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .box1 {
+      color: white;
+      outline: solid black 3px;
+      border-left: solid #4A5568 3px;
+      border-top: solid #4A5568 3px;
+      background-color: #343F50;
+    }
+
+    .box2 {
+      color: white;
+      outline: dashed lightcoral 3px;
+      border-radius: 25px 25px 25px 25px;
+      background: rgb(2, 0, 36);
+      background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(139, 78, 143, 1) 25%, rgba(190, 111, 173, 1) 46%, rgba(185, 108, 170, 1) 48%, rgba(157, 90, 154, 1) 65%, rgba(0, 212, 255, 1) 100%);
+    }
+
+    .box3 {
+      border-radius: 0px 30px 30px 30px;
+      outline: solid rgb(231, 226, 226) 1.5px;
+      box-shadow: rgba(0, 0, 0, 0.15) 8px 8px 6px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box1">
+    Hello✋
+  </div>
+
+  <div class="box2">
+    Hello✋
+  </div>
+
+  <div class="box3">
+    Hello✋
+  </div>
+</body>
+
+</html>
