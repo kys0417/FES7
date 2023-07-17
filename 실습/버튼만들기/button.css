@@ -1,12 +1,39 @@
+:root {
+  --bg-color: #343e4e;
+  --main-color: #343e4e;
+  --text-color: #cbd5df;
+  --border: 1px solid black;
+  --box-shadow: inset 1px 1px 0 0 #4a5568;
+}
+.yes {
+  --bg-color: #343e4e;
+  --main-color: #439aff;
+  --text-color: white;
+}
+.del {
+  --bg-color: #343e4e;
+  --main-color: #eb5757;
+  --text-color: white;
+}
+
 button {
   width: 88px;
   height: 32px;
-  background-color: #2d3848;
-  border: 1px solid black;
   margin: 10px;
 }
+
 .btn {
-  color: #CBD5DF;
+  color: var(--text-color);
+  background-color: var(--main-color);
+  border: var(--border);
+}
+.btn:enabled {
+  box-shadow: var(--box-shadow);
+}
+.btn:disabled {
+  border: 1px solid #343e4e;
+  background-color: #3a4556;
+  color: #4a5568;
 }
 .btn:enabled:hover {
   color: white;
@@ -15,43 +42,40 @@ button {
 .btn:enabled:active {
   box-shadow: inset 1px 1px 0 0 #262f3e;
 }
-.btn:enabled {
-  box-shadow: inset 1px 1px 0 0 #4a5568;
-}
-.btn:disabled {
-  border: 1px solid #343e4e;
-  background-color: #3a4556;
-  color: #4a5568;
-}
+
 .yes {
-  color: #439AFF;
+  color: var(--main-color);
+  background-color: var(--bg-color);
+  border: var(--border);
 }
 .yes:enabled {
-  box-shadow: inset 1px 1px 0 0 #4a5568;
+  box-shadow: var(--box-shadow)
 }
 .yes:enabled:hover {
-  background-color: #439AFF;
-  border: 1px solid #439AFF;
-  color: white;
+  background-color: var(--main-color);
+  border: 1px solid var(--main-color);
+  color: var(--text-color);
   text-decoration: underline;
-  box-shadow: inset 1px 1px 0 0 #73B4FF;
+  box-shadow: inset 1px 1px 0 0 #73b4ff;
 }
 .yes:enabled:active {
-  box-shadow: inset 1px 1px 0 0 #3B78BE;
+  box-shadow: inset 1px 1px 0 0 #3b78be;
 }
 .del {
-  color: #EB5757;
+  color: var(--main-color);
+  background-color: var(--bg-color);
+  border: var(--border);
 }
 .del:enabled {
-  box-shadow: inset 1px 1px 0 0 #4a5568;
+  box-shadow: var(--box-shadow);
 }
 .del:enabled:hover {
-  background-color: #EB5757;
-  border: 1px solid #EB5757;
-  box-shadow: inset 1px 1px 0 0 #FD6F6F;
+  background-color: var(--main-color);
+  border: 1px solid var(--main-color);
+  box-shadow: inset 1px 1px 0 0 #fd6f6f;
   color: white;
   text-decoration: underline;
 }
 .del:enabled:active {
-  box-shadow: inset 1px 1px 0 0 #D94242;
+  box-shadow: inset 1px 1px 0 0 #d94242;
 }
