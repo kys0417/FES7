@@ -72,6 +72,9 @@ p {
   border-radius: 50%;
   margin-right: 16px;
 }
+.card2 .top-box .top-text-group {
+  padding: 5px 0px 5px 0px;
+}
 .card2 .top-box .top-content {
   color: #5a6a72;
   font-size: 12px;
@@ -81,6 +84,8 @@ p {
 }
 .card2 .main-img {
   width: 100%;
+  height: 196px;
+  vertical-align: bottom;
 }
 .card2 .content {
   margin: 0px 0px 10px 0px;
@@ -105,10 +110,12 @@ p {
 }
 .card2 .button-box .right-button-group {
   display: flex;
+
 }
 .card2 .button-box .right-button-group img {
   width: 32px;
   height: 32px;
+  margin-right: 6px;
 }
 .card2 .button-box .right-button-group:hover {
   cursor: pointer;
