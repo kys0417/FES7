@@ -1,0 +1,154 @@
+@font-face {
+  font-family: "Pretendard";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+/* reset */
+body,
+h1,
+h2,
+p {
+  margin: 0;
+}
+h1 {
+  padding: 0;
+}
+img {
+  vertical-align: top;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+body {
+  font-family: Pretendard;
+  background-color: #fffaf0;
+}
+button {
+  font-family: Pretendard;
+}
+.header {
+  background-color: white;
+}
+
+/* css 적용 */
+.max-width {
+  width: 1224px;
+  max-width: calc(100% - 60px);
+  margin: auto;
+}
+/* header */
+.header .max-width {
+  height: 120px;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header h1 {
+  width: 156px;
+  height: 75px;
+}
+.header .header-join,
+.header .header-login {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 20px 4px 10px;
+  gap: 4px;
+  color: #5a6a72;
+  font-size: 14px;
+}
+/* main */
+.login,
+.join {
+  margin-top: 72px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.login h2,
+.join h2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 29px;
+}
+.login h2 strong,
+.join h2 strong {
+  width: fit-content;
+  color: #29363d;
+  font-size: 24px;
+  box-shadow: inset 0 -10px #ffcdd6;
+  border-bottom: 2px solid #ff4f6e;
+  line-height: 20px;
+}
+/* .login h2 img {
+  width: 249.6px;
+  height: 120px;
+} */
+.login h2 svg,
+.join h2 svg {
+  width: 100%;
+  height: 120px;
+}
+.svg-heart {
+  stroke: transparent;
+  stroke-width: 2px;
+  scale: 0.8;
+  transform-origin: 50% 20px;
+  animation: svg-heart 0.5s ease infinite alternate;
+}
+@keyframes svg-heart {
+  to {
+    stroke: #ffc7d1;
+    stroke-width: 2px;
+    scale: 2.5;
+  }
+}
+.login form,
+.join form {
+  width: 392px;
+  display: flex;
+  flex-direction: column;
+  margin: 40px auto 50px;
+  gap: 24px;
+}
+.login form label,
+.join form label {
+  color: #29363d;
+  font-size: 14px;
+}
+.login form input,
+.join form input {
+  width: 100%;
+  height: 48px;
+  border-radius: 4px 4px 0px 0px;
+  border: none;
+  border-bottom: 1px solid var(--text-3, #677880);
+  background: #fff;
+  margin-top: 8px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.login form button,
+.join form button {
+  color: #f4f5f5;
+  font-size: 16px;
+  width: 100%;
+  height: 48px;
+  border-radius: 4px;
+  border: none;
+  background: #29363d;
+}
+.login form button:hover,
+.join form button:hover {
+  cursor: pointer;
+}
+/* footer */
+footer {
+  text-align: center;
+  color: #677880;
+  font-size: 12px;
+}
