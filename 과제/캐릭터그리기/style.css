@@ -1,0 +1,164 @@
+@font-face {
+  font-family: 'BookkMyungjo-Bd';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/BookkMyungjo-Bd.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+body {
+  font-family: 'BookkMyungjo-Bd';
+}
+section {
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  height: 600px;
+  background-image: url("./img/Vector\ 1.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.point-box,
+.face {
+  position: relative;
+}
+.point-box *,
+.face * {
+  position: absolute;
+}
+.point1 {
+  top: 120px;
+  left: 150px;
+  transform: rotate(-100deg);
+  box-shadow: inset 0px 0px 3px rgba(0, 0, 0, 0.25);
+}
+.point2 {
+  top: 300px;
+  left: 100px;
+  transform: rotate(-100deg);
+  box-shadow: inset 0px 0px 3px rgba(0, 0, 0, 0.25);
+}
+.point3 {
+  top: 200px;
+  left: 500px;
+  transform: rotate(-120deg);
+  box-shadow: inset 0px 0px 3px rgba(0, 0, 0, 0.25);
+}
+.point4 {
+  top: 500px;
+  left: 200px;
+  transform: rotate(-120deg);
+  box-shadow: inset 0px 0px 3px rgba(0, 0, 0, 0.25);
+}
+.point5 {
+  top: 450px;
+  left: 350px;
+  transform: rotate(-140deg);
+  box-shadow: inset 0px 0px 3px rgba(0, 0, 0, 0.25);
+}
+.point7 {
+  top: 100px;
+  left: 400px;
+  transform: rotate(-160deg);
+  box-shadow: inset 0px 0px 3px rgba(0, 0, 0, 0.25);
+}
+.p-c {
+  width: 40px;
+  height: 18px;
+  background-color: #ca977a;
+  border-radius: 40px;
+}
+.eb1 {
+  position: absolute;
+  top: 190px;
+  left: 220px;
+  background-color: black;
+  width: 60px;
+  height: 15px;
+  border-radius: 20px;
+  transform: rotate(-20deg);
+  box-shadow: -4px 4px 1px rgba(0, 0, 0, 0.25);
+}
+.eb2 {
+  position: absolute;
+  top: 150px;
+  left: 370px;
+  background-color: black;
+  width: 60px;
+  height: 15px;
+  border-radius: 20px;
+  transform: rotate(-5deg);
+  box-shadow: -4px 4px 1px rgba(0, 0, 0, 0.25);
+}
+.e1 {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background-color: white;
+  border-radius: 50%;
+  border: 10px solid black;
+  top: 240px;
+  left: 260px;
+  box-shadow: -1px 12px 3px rgba(0, 0, 0, 0.25);
+}
+.e2 {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background-color: white;
+  border-radius: 50%;
+  border: 10px solid black;
+  top: 210px;
+  left: 390px;
+  box-shadow: 1px 12px 3px rgba(0, 0, 0, 0.25);
+}
+.mouth {
+  width: 120px;
+  height: 108px;
+  background-image: url("./img/Vector\ 2.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  top: 265px;
+  left: 290px;
+}
+.text-box {
+  position: fixed;
+  top: 80%;
+  left: 52%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  font-size: 100px;
+  color: white;
+}
+.text-box span:nth-child(1){
+  animation: popup 8s infinite;
+}
+.text-box span:nth-child(2){
+  animation: popup 8s 1s infinite;
+}
+.text-box span:nth-child(3){
+  animation: popup 8s 2s infinite;
+}
+.text-box span:nth-child(4){
+  animation: popup 8s 3s infinite;
+}
+.text-box span:nth-child(5){
+  animation: popup 8s 4s infinite;
+}
+.text-box span:nth-child(6){
+  animation: popup 8s 5s infinite;
+}
+@keyframes popup {
+  0% {
+    color: black;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    color: black;
+  }
+}
+
