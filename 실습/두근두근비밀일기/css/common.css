@@ -4,12 +4,20 @@
   font-weight: 400;
   font-style: normal;
 }
+@font-face {
+  font-family: "Pretendard-Bold";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
 /* reset */
-body,
 h1,
 h2,
+h3,
 p {
   margin: 0;
+  padding: 0;
+  font: inherit;
 }
 h1 {
   padding: 0;
@@ -22,14 +30,36 @@ a {
   text-decoration: none;
 }
 body {
-  font-family: Pretendard;
+  margin: 0;
+  font-family: "Pretendard";
   background-color: #fffaf0;
 }
 button {
-  font-family: Pretendard;
+  font-family: "Pretendard";
+  border: 0;
+}
+textarea {
+  font-family: "Pretendard";
+  box-sizing: border-box;
+  padding: 10px;
+}
+ol, li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 .header {
   background-color: white;
+}
+.a11y-hidden {
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
 }
 
 /* css 적용 */
@@ -50,7 +80,7 @@ button {
   width: 156px;
   height: 75px;
 }
-.header .header-join,
+/* .header .header-join,
 .header .header-login {
   display: inline-flex;
   align-items: center;
@@ -58,6 +88,49 @@ button {
   gap: 4px;
   color: #5a6a72;
   font-size: 14px;
+} */
+/* header - index.html */
+.header .header-right-box {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.header .header-right-box p::after {
+  content: "|";
+  color: #d8ddde;
+  margin-left: 24px;
+}
+.header .header-right-box p strong {
+  box-shadow: inset 0 -10px #ffcdd6;
+}
+
+@media (max-width: 600px) {
+  .header .header-right-box p {
+    position: absolute;
+    top: 140px;
+    right: 30px;
+  }
+  .header .header-right-box p::after {
+    display: none;
+  }
+}
+/* 버튼 */
+[class^="btn"] {
+  display: inline-flex;
+  height: 40px;
+  padding: 0 20px 0 52px;
+  background: #fff no-repeat 18px 50% / 32px;
+  color: #5a6a72;
+  align-items: center;
+}
+.btn-login {
+  background-image: url(../img/icon-login.svg);
+}
+.btn-join {
+  background-image: url(../img/icon-join.svg);
+}
+.btn-logout {
+  background-image: url(../img/icon-logout.svg);
 }
 /* main */
 .login,
@@ -107,21 +180,21 @@ button {
     scale: 2.5;
   }
 }
-.login form,
-.join form {
+.login .form,
+.join .form {
   width: 392px;
+  margin: 40px auto 50px;
+}
+.form {
   display: flex;
   flex-direction: column;
-  margin: 40px auto 50px;
   gap: 24px;
 }
-.login form label,
-.join form label {
+.form label {
   color: #29363d;
   font-size: 14px;
 }
-.login form input,
-.join form input {
+.form input {
   width: 100%;
   height: 48px;
   border-radius: 4px 4px 0px 0px;
@@ -132,8 +205,7 @@ button {
   padding: 10px;
   box-sizing: border-box;
 }
-.login form button,
-.join form button {
+.form button {
   color: #f4f5f5;
   font-size: 16px;
   width: 100%;
@@ -142,9 +214,17 @@ button {
   border: none;
   background: #29363d;
 }
-.login form button:hover,
-.join form button:hover {
+.form button:hover {
   cursor: pointer;
+}
+.form textarea {
+  width: 100%;
+  height: 360px;
+  /* aspect-ratio: 1 / 2; */
+  display: block;
+  border: 1px solid #677880;
+  border-radius: 4px;
+  resize: none;
 }
 /* footer */
 footer {

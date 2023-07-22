@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>두근두근 비밀일기</title>
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="max-width">
+      <h1>
+        <a href="./">
+          <img src="./img/logo.svg" alt="">
+        </a>
+      </h1>
+      <div class="header-right-box">
+        <p>환영합니다 <strong>홍길동</strong>님!</p>
+        <button type="button" class="btn-logout">로그아웃</button>
+      </div>
+      </a>
+    </div>
+  </header>
+
+  <main class="main max-width">
+    <section class="main-form">
+      <h2 class="heart-title">2023.02.27의 비밀일기</h2>
+      <form class="form">
+        <div>
+          <label for="diary-title" class="a11y-hidden">제목</label>
+          <input id="diary-title" type="text" placeholder="제목">
+        </div>
+        <div>
+          <label for="diary-content" class="a11y-hidden">내용</label>
+          <textarea id="diary-content" cols="30" rows="10" placeholder="오늘의 비밀은 무엇인가요?"></textarea>
+        </div>
+
+        <button type="submit">작성하기</button>
+      </form>
+    </section>
+    <section class="main-diary">
+      <h2 class="a11y-hidden">일기 목록</h2>
+
+      <ol class="list">
+        <li>
+          <article class="diary-article">
+            <header>
+              <h3 class="article-title">제목</h3>
+              <time class="article-time" datetime="2023-02-24">2023.02.24.THU</time>
+            </header>
+            <p class="article-content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio reiciendis itaque fuga laborum magnam veritatis error quasi corrupti excepturi id
+              exercitationem blanditiis, neque sed sit rerum non cumque voluptate porro.</p>
+            <div class="button-group">
+              <button type="button">
+                <img src="./img/icon-edit.svg" alt="">
+              </button>
+              <span></span>
+              <button type="button">
+                <img src="./img/icon-delete.svg" alt="">
+              </button>
+            </div>
+          </article>
+        </li>
+      </ol>
+    </section>
+  </main>
+</body>
+
+</html>
