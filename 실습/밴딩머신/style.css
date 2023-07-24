@@ -214,15 +214,12 @@ button {
 }
 /* 다시 section1 css */
 .section1 .list-cola .cola-price {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 70px;
-  height: 22px;
-  border-radius: 50px;
-  color: white;
-  background-color: #6327fe;
   font-size: 12px;
+  background-color: #6327fe;
+  color: white;
+  padding: 5px 0;
+  font-weight: normal;
+  border-radius: 30px;
 }
 .section1 .shopping-basket {
   display: grid;
