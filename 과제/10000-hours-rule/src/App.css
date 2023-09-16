@@ -1,0 +1,18 @@
+@font-face {
+  font-family: 'OTEnjoystoriesBA';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/OTEnjoystoriesBA.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+:root {
+  --main-color1 : #5B2386;
+  --main-color2 : #FCEE21;
+  --quote-color : #F5DF4D;
+  font-size: 10px;
+  background-color: var(--main-color1);
+}
+.app {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+}
