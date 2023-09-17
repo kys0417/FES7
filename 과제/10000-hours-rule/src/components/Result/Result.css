@@ -1,0 +1,40 @@
+.field_result {
+  color: white;
+  line-height: 1.5;
+}
+.field_result_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.result_text {
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.result_goal,
+.result_time {
+  padding: 0 20px;
+  font-size: 7rem;
+}
+.field_buttons {
+  margin: 70px 0 80px 0;
+}
+.button_train,
+.button_share {
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 2rem;
+  color: var(--main-color1);
+  border: none;
+  border-radius: 30px;
+  padding: 10px 40px;
+  background: var(--main-color2);
+  cursor: pointer;
+}
+.button_share {
+  margin-left: 20px;
+  background-color: white;
+}
