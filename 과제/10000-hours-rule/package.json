@@ -23,7 +23,7 @@
     "build-and-serve": "npm run build && npm run serve",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "homepage": "https://kys0417.github.io/FrontendSchool_7/"
+    "homepage": "https://kys0417.github.io/FrontendSchool_7/과제/10000-hours-rule/"
   },
   "eslintConfig": {
     "extends": [
