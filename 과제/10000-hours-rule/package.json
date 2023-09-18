@@ -1,4 +1,5 @@
 {
+  "homepage": "https://kys0417.github.io/FrontendSchool_7/",
   "name": "10000-hours-rule",
   "version": "0.1.0",
   "private": true,
@@ -22,8 +23,7 @@
     "serve": "serve -s build",
     "build-and-serve": "npm run build && npm run serve",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "homepage": "https://kys0417.github.io/FrontendSchool_7/과제/10000-hours-rule/"
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
