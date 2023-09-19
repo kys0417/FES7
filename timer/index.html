@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Timer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="header"><img src="./img/weniv.svg" alt=""></header>
+  <main class="main">
+    <section class="section_title">
+      <h1 class="title">TIMER</h1>
+      <hr class="line1"></hr>
+      <div class="line2"></div>
+    </section>
+    <section class="section_time">
+      <div class="hrs">
+        <span>HRS</span>
+        <input type="text" class="input_hrs" value="00"></input>
+      </div>
+      <img src="./img/dot.svg" alt="">
+      <div class="min">
+        <span>MIN</span>
+        <input class="input_min" value="00"></input>
+      </div>
+      <img src="./img/dot.svg" alt="">
+      <div class="sec">
+        <span>SEC</span>
+        <input class="input_sec" value="00"></input>
+      </div>
+    </section>
+    <section class="section_button">
+      <button class="btn_start" disabled><img src="./img/icon-start.svg" alt="">START</button>
+      <button class="btn_pause"><img src="./img/icon-stop.svg" alt="">PAUSE</button>
+      <button class="btn_reset" disabled><img src="./img/icon-reset.svg" alt="">RESET</button>
+    </section>
+  </main>
+  <footer class="footer">@ WENIV CORP.</footer>
+  <script src="./script.js"></script>
+</body>
+
+</html>

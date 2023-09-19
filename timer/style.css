@@ -1,0 +1,141 @@
+@font-face {
+  font-family: "Pretendard-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+/* reset */
+body,
+ul,
+li,
+h1,
+h2 {
+  margin: 0;
+  padding: 0;
+}
+img {
+  vertical-align: top;
+}
+h1,
+h2,
+input {
+  font: inherit;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+button {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font: inherit;
+  border: 0;
+  background: none;
+}
+button:enabled,
+img:hover,
+a:hover {
+  cursor: pointer;
+}
+ul,
+li {
+  list-style: none;
+}
+/* css */
+body {
+  font-family: "Pretendard-Regular";
+  font-size: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 6rem;
+  width: 400px;
+  max-width: 100%;
+  margin: auto;
+  padding: 72px 0 104px 0;
+  min-height: 100vh;
+  background: var(--gradient2, radial-gradient(293.21% 130.49% at 3.59% 5.28%, #f0f4ff 0%, #a5b6ee 100%));
+}
+.main {
+  width: 100%;
+  border-radius: 16px;
+  padding: 48px 44px 40px 44px;
+  background: var(--gradient, linear-gradient(144deg, #5572bb 2.13%, #374b7c 102.97%));
+  box-shadow: 20px 20px 60px 10px rgba(55, 75, 124, 0.4);
+}
+.section_title .title {
+  color: white;
+  font-size: 2.4rem;
+  font-weight: 700;
+  padding-bottom: 24px;
+}
+.section_title .line1 {
+  background: #3d538a;
+  height: 0.1rem;
+  border: none;
+  border-bottom: 0.1rem solid #5b75b4;
+}
+.section_time {
+  padding: 33px 10px 40px 10px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.section_time .hrs,
+.section_time .min,
+.section_time .sec {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 8rem;
+}
+.input_hrs,
+.input_min,
+.input_sec {
+  background: url("./img/box.svg") no-repeat;
+  background-size: contain;
+  border-radius: 5px;
+  font-size: 4rem;
+  padding: 16px 14px 16px 14px;
+  font-weight: 700;
+  color: white;
+  width: 5rem;
+  text-align: center;
+  border: none;
+}
+.section_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn_pause {
+  display: none;
+  background: #15C2B8;
+  width: 112px;
+  height: 48px;
+  font-size: 14px;
+  font-weight: 700;
+  color: white;
+  border-radius: 50px;
+}
+.btn_start {
+  border-radius: 50px;
+  background: #5180ff;
+  width: 112px;
+  height: 48px;
+  font-size: 14px;
+  font-weight: 700;
+  color: white;
+}
+.btn_reset {
+  border-radius: 50px;
+  background: #FB7099;
+  width: 112px;
+  height: 48px;
+  font-size: 14px;
+  font-weight: 700;
+  color: white;
+}
+
